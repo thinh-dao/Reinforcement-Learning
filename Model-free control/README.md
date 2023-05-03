@@ -53,7 +53,7 @@ __Pseudocode for TDLearning__
 ### *2.1 Online Monte Carlo Control*
 In order for our policy iteration to work entirely on model-free problems, we also need policy improvement algorithms that assume no knowledge about the model of the environment. The current policy improvement step is:
 
-$\pi^{*} \leftarrow \underset{a \in A}{\operatorname{argmax}} \left(R(s,a) + \gamma \sum_{s' \in S} P(s' \mid s,a) V^{\pi}(s')\right); \forall s \in S$
+$\pi^{*} \leftarrow \underset{a \in A}{argmax} \left(R(s,a) + \gamma \sum_{s' \in S} P(s' \mid s,a) V^{\pi}(s')\right); \forall s \in S$
 
 To get rid of transition probability P, we can make use of state-action values:
 <img src="picture/PI.png" alt="PI" width="75%" height="75%">
