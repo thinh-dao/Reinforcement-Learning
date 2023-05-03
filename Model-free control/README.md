@@ -58,7 +58,7 @@ $\pi^{*} \leftarrow \underset{a \in A}{argmax} \left(R(s,a) + \gamma \sum_{s' \i
 To get rid of transition probability P, we can make use of state-action values:
 <img src="picture/PI.png" alt="PI" width="75%" height="75%">
 
-### *2.2 $\epsilon$-greedy policy for exploration*
+### *2.2 $ \epsilon $-greedy policy for exploration*
 One problem with Monte-Carlo approach is that the current policy may ignore suboptimal actions that may yield higher long-term expected rewards. Therefore, to encourage exploration, one simple approach is to add some randomness into the process of choosing actions of the policy:
 
 <img src="picture/ep-greedy.png" alt="ep-greedy" width="75%" height="75%">
