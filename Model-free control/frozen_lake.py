@@ -163,10 +163,3 @@ if __name__ == "__main__":
     seed = 741684
     game = Frozen_lake(gamma=gamma,seed=seed,config=config)
     game.sarsa(alpha, epsilon, n_episodes)
-    
-            
-        
-        
-
-        
-
