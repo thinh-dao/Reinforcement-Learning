@@ -6,7 +6,7 @@ import copy
 
 class Frozen_lake:
     def __init__(self, gamma=0.9, seed=0, config=None, stochastic=True):
-        self.env = gym.make('FrozenLake-v1', render_mode='ansi', desc=config, is_slippery=stochastic).unwrapped
+        self.env = gym.make('FrozenLake-v1', render_mode='human', desc=config, is_slippery=stochastic).unwrapped
         np.random.seed(seed)   
         self.env.reset(seed=seed)
         self.env.action_space.seed(seed)
